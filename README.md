@@ -1,7 +1,7 @@
 # Plantillas de Negocio
 
 Plantilla básica para un sitio web genérico de negocio con frontend en React y backend en Node.js.
-https://github.com/carlosna28/EnkoPlantillas
+Start project:_https://github.com/carlosna28/EnkoPlantillas
 ## Estructura
 
 - `client/` - aplicación React creada con Vite.
