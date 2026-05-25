@@ -1,0 +1,496 @@
+.restaurant-container {
+  color: #1d1510;
+  background: #110b08;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* RESET GLOBAL SOLO DENTRO DEL CONTAINER */
+.restaurant-container * {
+  box-sizing: border-box;
+}
+
+.restaurant-container body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #110b08 0%, #2f211a 100%);
+}
+
+/* PAGE */
+.restaurant-container .page-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* HERO */
+.restaurant-container .hero {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  padding: 56px 44px;
+  border-radius: 36px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  margin-bottom: 42px;
+  position: relative;
+}
+
+.restaurant-container .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(255, 125, 54, 0.18), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(255, 191, 101, 0.16), transparent 20%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.restaurant-container .hero-copy,
+.restaurant-container .hero-image-card {
+  position: relative;
+  z-index: 1;
+}
+
+.restaurant-container .hero-copy {
+  max-width: 670px;
+}
+
+.restaurant-container .hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffd8af;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.restaurant-container .hero-copy h1 {
+  font-size: clamp(3.3rem, 6vw, 5.5rem);
+  line-height: 0.96;
+  margin: 0;
+  color: #fff;
+}
+
+.restaurant-container .hero-copy p {
+  margin: 24px 0 0;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #ede1d5;
+}
+
+/* ACTIONS */
+.restaurant-container .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.restaurant-container .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 16px 30px;
+  min-height: 56px;
+  min-width: 180px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restaurant-container .button:hover {
+  transform: translateY(-2px);
+}
+
+.restaurant-container .button.primary {
+  background: #ffb54d;
+  color: #1d0d00;
+}
+
+.restaurant-container .button.secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+/* STATS */
+.restaurant-container .hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.restaurant-container .stat-card {
+  min-width: 135px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 22px 24px;
+  border-radius: 24px;
+}
+
+.restaurant-container .stat-card strong {
+  display: block;
+  font-size: 2rem;
+  color: #ffd286;
+  margin-bottom: 6px;
+}
+
+.restaurant-container .stat-card span {
+  color: #e9d5c1;
+  font-size: 0.98rem;
+}
+
+/* IMAGE */
+.restaurant-container .hero-image-card {
+  display: grid;
+  gap: 18px;
+  justify-self: end;
+  min-height: 420px;
+}
+
+.restaurant-container .hero-image-card img {
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.35);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  min-height: 420px;
+}
+
+.restaurant-container .hero-image-label {
+  display: inline-flex;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffe6c7;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* SECTIONS */
+.restaurant-container .section {
+  margin-bottom: 46px;
+}
+
+.restaurant-container .section-header {
+  max-width: 700px;
+  margin-bottom: 22px;
+}
+
+.restaurant-container .section h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.2rem, 3vw, 3rem);
+}
+
+.restaurant-container .section-header p,
+.restaurant-container .section-copy p,
+.restaurant-container .service-card p,
+.restaurant-container .package-card p,
+.restaurant-container .testimonial-card p,
+.restaurant-container .faq-item p,
+.restaurant-container .contact-card p {
+  color: #d9c3b4;
+  line-height: 1.85;
+}
+
+/* ABOUT */
+.restaurant-container .about-section,
+.restaurant-container .contact-section {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.restaurant-container .section-copy h2 {
+  margin-bottom: 18px;
+}
+
+/* HIGHLIGHTS */
+.restaurant-container .highlight-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.restaurant-container .highlight-card {
+  display: flex;
+  gap: 16px;
+  padding: 24px 22px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+}
+
+.restaurant-container .highlight-card span {
+  color: #ffb54d;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.restaurant-container .highlight-card p {
+  margin: 0;
+  color: #f4e3d5;
+}
+
+/* GRIDS */
+.restaurant-container .package-grid,
+.restaurant-container .service-grid,
+.restaurant-container .testimonial-grid,
+.restaurant-container .gallery-grid,
+.restaurant-container .faq-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.restaurant-container .package-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* CARDS */
+.restaurant-container .package-card,
+.restaurant-container .service-card,
+.restaurant-container .testimonial-card,
+.restaurant-container .faq-item,
+.restaurant-container .contact-card,
+.restaurant-container .contact-form,
+.restaurant-container .gallery-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* PACKAGE */
+.restaurant-container .package-card {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.restaurant-container .package-card h3 {
+  color: #fff;
+  margin: 0 0 14px;
+}
+
+.restaurant-container .package-price {
+  margin: 16px 0 18px;
+  color: #ffd286;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.restaurant-container .package-card > p {
+  min-height: 72px;
+  margin-bottom: 20px;
+}
+
+/* LISTS */
+.restaurant-container .package-card ul,
+.restaurant-container .faq-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #f7e6d2;
+}
+
+.restaurant-container .package-card li,
+.restaurant-container .faq-item li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 12px;
+  color: #f7e6d2;
+}
+
+.restaurant-container .package-card li::before,
+.restaurant-container .faq-item li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffb54d;
+}
+
+/* BUTTON INSIDE CARD */
+.restaurant-container .package-card button,
+.restaurant-container .button.tertiary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+  min-height: 56px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.restaurant-container .package-card button:hover,
+.restaurant-container .button.tertiary:hover {
+  background: rgba(255, 181, 77, 0.18);
+}
+
+/* SERVICES */
+.restaurant-container .service-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.restaurant-container .service-card {
+  padding: 26px;
+}
+
+/* TESTIMONIALS */
+.restaurant-container .testimonial-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.restaurant-container .testimonial-card {
+  padding: 32px;
+}
+
+.restaurant-container .testimonial-card p {
+  margin: 0 0 22px;
+}
+
+.restaurant-container .testimonial-card span {
+  display: block;
+  color: #ffcc8d;
+  font-weight: 700;
+}
+
+/* GALLERY */
+.restaurant-container .gallery-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.restaurant-container .gallery-card {
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.restaurant-container .gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.restaurant-container .gallery-card:hover img {
+  transform: scale(1.04);
+}
+
+/* FAQ */
+.restaurant-container .faq-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.restaurant-container .faq-item {
+  padding: 28px;
+}
+
+.restaurant-container .faq-item h3 {
+  margin-bottom: 16px;
+}
+
+/* CONTACT */
+.restaurant-container .contact-section {
+  grid-template-columns: minmax(320px, 380px) 1fr;
+}
+
+.restaurant-container .contact-card,
+.restaurant-container .contact-form {
+  padding: 32px;
+}
+
+.restaurant-container .contact-card a.whatsapp {
+  display: inline-block;
+  margin-top: 18px;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+/* FORM */
+.restaurant-container .contact-form label {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #ede1d5;
+}
+
+.restaurant-container .contact-form input,
+.restaurant-container .contact-form textarea {
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.restaurant-container .contact-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.restaurant-container .contact-form button {
+  width: 100%;
+  background: #ffb54d;
+  color: #1d0d00;
+  border: none;
+  padding: 18px 20px;
+  border-radius: 999px;
+}
+
+/* STATUS */
+.restaurant-container .status {
+  margin-top: 18px;
+  color: #ffd286;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1020px) {
+  .restaurant-container .hero,
+  .restaurant-container .about-section,
+  .restaurant-container .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-container .hero {
+    padding: 42px 22px;
+  }
+}
+
+@media (max-width: 680px) {
+  .restaurant-container .page-container {
+    padding: 18px;
+  }
+
+  .restaurant-container .hero-copy h1 {
+    font-size: 3rem;
+  }
+
+  .restaurant-container .hero-actions {
+    flex-direction: column;
+  }
+
+  .restaurant-container .hero-stats {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Q,Taco Eventos",
+  "tagline": "Taquizas premium para tu evento en Querétaro",
+  "heroImage": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80",
+  "description": "Taquizas profesionales con sabor auténtico, atención impecable y presentación premium para bodas, corporativos y fiestas privadas.",
+  "about": "En Q,Taco creamos eventos con taquizas completas, ejecutadas con precisión y estilo. Nos encargamos de la comida, el montaje y la atención para que disfrutes sin preocupaciones.",
+  "highlights": [
+    "Montaje elegante con personal uniformado",
+    "Carnes y guisados preparados al momento",
+    "Salsas y complementos artesanales",
+    "Servicio para eventos de 30 a 300 personas"
+  ],
+  "services": [
+    {
+      "title": "Taquiza corporativa",
+      "description": "Servicio profesional para reuniones, convenciones y lanzamientos con calidad premium."
+    },
+    {
+      "title": "Taquiza para bodas",
+      "description": "Montaje elegante y servicio completo para una experiencia gastronómica memorable."
+    },
+    {
+      "title": "Taquiza gourmet",
+      "description": "Cortes premium, salsas exclusivas y presentación de alto nivel."
+    }
+  ],
+  "packages": [
+    {
+      "title": "Paquete platinum",
+      "price": "$750 / persona",
+      "description": "Taquiza completa para eventos de alto nivel, con 5 carnes, guarniciones y montaje premium.",
+      "bullets": ["Montaje completo", "Chef en sitio", "Cortes especiales"]
+    },
+    {
+      "title": "Paquete ejecutivo",
+      "price": "$650 / persona",
+      "description": "Servicio profesional para eventos corporativos y sociales con atención rápida y ordenada.",
+      "bullets": ["Menú personalizado", "Equipo uniformado", "Limpieza total"]
+    },
+    {
+      "title": "Paquete select",
+      "price": "$580 / persona",
+      "description": "Ideal para fiestas privadas y reuniones con sabor tradicional y presentación cuidada.",
+      "bullets": ["Taquiza al momento", "Salsas caseras", "Tortillas recién hechas"]
+    }
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1200&q=80",
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80"
+  ],
+  "testimonials": [
+    {
+      "quote": "La organización fue impecable y los tacos, espectaculares. Nuestro evento se elevó 100%.",
+      "author": "Ana P."
+    },
+    {
+      "quote": "Llegaron puntuales, el montaje fue elegante y los invitados quedaron encantados.",
+      "author": "Luis M."
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Cuál es el pedido mínimo?",
+      "answer": "Nuestro servicio inicia desde 30 personas, con opciones de personalización para grupos más grandes."
+    },
+    {
+      "question": "¿Incluye montaje y limpieza?",
+      "answer": "Sí. El servicio cubre montaje completo, atención durante el evento y limpieza al finalizar."
+    },
+    {
+      "question": "¿Puedo personalizar el menú?",
+      "answer": "Claro. Adaptamos el menú según tu evento, con opciones vegetarianas y cortes premium."
+    }
+  ],
+  "stats": [
+    { "value": "10+", "label": "años de experiencia" },
+    { "value": "500+", "label": "eventos atendidos" },
+    { "value": "98%", "label": "clientes satisfechos" }
+  ],
+  "contact": {
+    "email": "cotiza@qtaco.com.mx",
+    "phone": "+52 442 794 8193",
+    "whatsapp": "https://wa.me/524427948193?text=Hola%20Q%2Ctaco%20Quiero%20cotizar%20una%20taquiza%20para%20mi%20evento.",
+    "address": "Querétaro, México"
+  }
+}
