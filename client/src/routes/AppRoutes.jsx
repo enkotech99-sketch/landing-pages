@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import RestaurantLanding from "../templates/restaurant/RestaurantLanding";
 import BarberLanding from "../templates/barber/BarberLanding";
 import ProfessionalsLanding from "../templates/professionals/ProfessionalsLanding";
-import FitnessLanding from "../templates/fitness/fitnessLanding";
-import BienesLanding from "../templates/bienes/bienesLanding";
-import AutomotiveLanding from "../templates/automotive/automotiveLanding";
+import FitnessLanding from "../templates/fitness/FitnessLanding";
+import BienesLanding from "../templates/bienes/BienesLanding";
+import AutomotiveLanding from "../templates/automotive/AutomotiveLanding";
 import HomeLanding from "../home/home";
 function AppRoutes() {
   return (
