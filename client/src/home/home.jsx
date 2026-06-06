@@ -90,7 +90,7 @@ function HomeLanding() {
             </a>
 
             <a
-              href="https://wa.me/524421234567?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20una%20landing%20page"
+              href="https://wa.me/?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20una%20landing%20page"
               target="_blank"
               rel="noreferrer"
               className="button whatsapp"

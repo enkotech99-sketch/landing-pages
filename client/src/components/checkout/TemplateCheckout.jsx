@@ -44,7 +44,7 @@ function TemplateCheckout() {
 Quiero mi página web lista.
 `;
 
-    const url = `https://wa.me/524421234567?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
   };

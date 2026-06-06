@@ -94,9 +94,9 @@ const defaultData = {
 
   contact: {
     email: "contacto@barberking.com",
-    phone: "+52 442 123 4567",
+    phone: "+52 xxx xxx xxxx",
     whatsapp:
-      "https://wa.me/524421234567?text=Hola%20quiero%20agendar%20una%20cita",
+      "https://wa.me/?text=Hola%20quiero%20agendar%20una%20cita",
     address: "Querétaro, México"
   }
 };

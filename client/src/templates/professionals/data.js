@@ -106,9 +106,9 @@ const data = {
 
   contact: {
     email: "contacto@novacare.com",
-    phone: "+52 442 123 4567",
+    phone: "+52 xxx xxx xxxx",
     whatsapp:
-      "https://wa.me/524421234567?text=Hola%20quiero%20más%20información",
+      "https://wa.me/?text=Hola%20quiero%20más%20información",
     address: "Querétaro, México"
   }
 };

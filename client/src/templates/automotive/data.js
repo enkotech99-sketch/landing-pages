@@ -87,9 +87,9 @@ const defaultData = {
 
   contact: {
     email: "contacto@velocitygarage.com",
-    phone: "+52 442 123 4567",
+    phone: "+52 xxx xxx xxxx",
     whatsapp:
-      "https://wa.me/524421234567?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20un%20servicio%20automotriz",
+      "https://wa.me/?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20un%20servicio%20automotriz",
     address: "Querétaro, México"
   }
 

@@ -89,9 +89,9 @@ const defaultData = {
 
   contact: {
     email: "contacto@aurearealestate.com",
-    phone: "+52 442 123 4567",
+    phone: "+52 xxx xxx xxxx",
     whatsapp:
-      "https://wa.me/524421234567?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20una%20propiedad",
+      "https://wa.me/?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20una%20propiedad",
     address: "Querétaro, México"
   }
 

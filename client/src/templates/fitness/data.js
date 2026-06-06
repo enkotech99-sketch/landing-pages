@@ -89,9 +89,9 @@ const defaultData = {
 
     contact: {
         email: "contacto@ironcore.com",
-        phone: "+52 442 123 4567",
+        phone: "+52 xxx xxx xxxx",
         whatsapp:
-            "https://wa.me/524421234567?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20fitness",
+            "https://wa.me/?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20fitness",
         address: "Querétaro, México"
     }
 };
