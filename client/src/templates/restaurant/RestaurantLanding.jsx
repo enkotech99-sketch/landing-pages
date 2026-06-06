@@ -42,7 +42,10 @@ function App() {
       setStatus(result.message || "Mensaje enviado correctamente.");
       setContact({ name: "", email: "", message: "" });
     } catch {
-      setStatus("Error al enviar el mensaje. Intenta de nuevo.");
+      setStatus(
+         "Esta es una versión de demostración. Contáctanos para implementar esta solución."
+        //"Error al enviar el mensaje. Intenta de nuevo."
+      );
     }
   };
 

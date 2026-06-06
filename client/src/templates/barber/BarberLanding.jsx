@@ -306,39 +306,49 @@ function Barber() {
 
             </div>
 
-            <form
-              className="contact-form"
-              action={`mailto:${business.contact.email}`}
-              method="POST"
-              encType="text/plain"
-            >
+            <form className="contact-form" onSubmit={handleSubmit}>
+            <h2>Cotiza</h2>
 
+            <label>
+              Nombre
               <input
-                type="text"
-                name="name"
-                placeholder="Nombre"
+                value={contact.name}
+                onChange={(e) =>
+                  setContact({ ...contact, name: e.target.value })
+                }
+                required
               />
+            </label>
 
+            <label>
+              Email
               <input
                 type="email"
-                name="email"
-                placeholder="Correo"
+                value={contact.email}
+                onChange={(e) =>
+                  setContact({ ...contact, email: e.target.value })
+                }
+                required
               />
+            </label>
 
+            <label>
+              Mensaje
               <textarea
-                rows="5"
-                name="message"
-                placeholder="Describe el servicio que buscas"
-              ></textarea>
+                value={contact.message}
+                onChange={(e) =>
+                  setContact({ ...contact, message: e.target.value })
+                }
+                required
+              />
+            </label>
 
-              <button
-                type="submit"
-                className="button primary"
-              >
-                Enviar correo
-              </button>
+            <button type="submit" className="button primary">
+              Enviar
+            </button>
 
-            </form>
+            {status && <p className="status">{status}</p>}
+          </form>
 
           </div>
 

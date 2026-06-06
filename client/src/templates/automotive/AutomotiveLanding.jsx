@@ -58,7 +58,8 @@ function Automotive() {
 
       setStatus(
         result.message ||
-        "Mensaje enviado correctamente."
+         "Esta es una versión de demostración. Contáctanos para implementar esta solución."
+        //"Mensaje enviado correctamente."
       );
 
       setContact({

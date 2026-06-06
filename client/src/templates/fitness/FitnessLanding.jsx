@@ -71,7 +71,8 @@ function FitnessDark() {
     } catch {
 
       setStatus(
-        "Error al enviar el mensaje."
+         "Esta es una versión de demostración. Contáctanos para implementar esta solución."
+        //"Error al enviar el mensaje."
       );
 
     }
