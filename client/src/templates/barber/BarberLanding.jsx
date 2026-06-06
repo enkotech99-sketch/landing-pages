@@ -6,6 +6,8 @@ import "../barber/barber.css";
 function Barber() {
   const [business, setBusiness] = useState(null);
   const contactRef = useRef(null);
+  const [contact, setContact] = useState({ name: "", email: "", message: "" });
+  const [status, setStatus] = useState("");
 
   useEffect(() => {
     try {
@@ -14,7 +16,27 @@ function Barber() {
       setBusiness(normalizeLanding(defaultData));
     }
   }, []);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setStatus("Enviando...");
 
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(contact)
+      });
+
+      const result = await response.json();
+      setStatus(result.message || "Mensaje enviado correctamente.");
+      setContact({ name: "", email: "", message: "" });
+    } catch {
+      setStatus(
+        "Esta es una versión de demostración. Contáctanos para implementar esta solución."
+        //"Error al enviar el mensaje. Intenta de nuevo."
+      );
+    }
+  };
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({
       behavior: "smooth"
@@ -306,49 +328,36 @@ function Barber() {
 
             </div>
 
-            <form className="contact-form" onSubmit={handleSubmit}>
-            <h2>Cotiza</h2>
+            <form
+              className="contact-form" onSubmit={handleSubmit}
+            >
 
-            <label>
-              Nombre
               <input
-                value={contact.name}
-                onChange={(e) =>
-                  setContact({ ...contact, name: e.target.value })
-                }
-                required
+                type="text"
+                name="name"
+                placeholder="Nombre"
               />
-            </label>
 
-            <label>
-              Email
               <input
                 type="email"
-                value={contact.email}
-                onChange={(e) =>
-                  setContact({ ...contact, email: e.target.value })
-                }
-                required
+                name="email"
+                placeholder="Correo"
               />
-            </label>
 
-            <label>
-              Mensaje
               <textarea
-                value={contact.message}
-                onChange={(e) =>
-                  setContact({ ...contact, message: e.target.value })
-                }
-                required
-              />
-            </label>
+                rows="5"
+                name="message"
+                placeholder="Describe el servicio que buscas"
+              ></textarea>
 
-            <button type="submit" className="button primary">
-              Enviar
-            </button>
-
-            {status && <p className="status">{status}</p>}
-          </form>
+              <button
+                type="submit"
+                className="button primary"
+              >
+                Enviar correo
+              </button>
+              {status && <p className="status">{status}</p>}
+            </form>
 
           </div>
 
