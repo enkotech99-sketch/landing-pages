@@ -201,7 +201,7 @@ function HomeLanding() {
 
           <span>PLAN INICIAL</span>
 
-          <h2>$800 MXN</h2>
+          <h2>$1200 MXN</h2>
 
           <p>
             Implementación inicial +
@@ -221,7 +221,7 @@ function HomeLanding() {
 
           <span>MANTENIMIENTO</span>
 
-          <h2>$250 MXN</h2>
+          <h2>$280 MXN</h2>
 
           <p>
             Hosting, soporte y mantenimiento
